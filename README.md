@@ -1,13 +1,13 @@
-Spring Cloud Demo Application Readme
+# Spring Cloud Demo Application Readme
 
-1.	Declaration:
+## 1.	Declaration:
   - a)	Java version 11 jdk is installed
   - b)	Maven is installed
   - c)	Spring Boot version: 2.7.15
   - d)	Spring Cloud version: 2021.0.5
   - e)	Zipkin: 2.23.0
 
-2.	Application description:
+## 2.	Application description:
   - a)	Spring Cloud Eureka: Eureka folder
     - i.	Start: go to Eureka folder, run “mvn spring-boot:run”
     - ii.	It is to start Spring Cloud Eureka server first for services to do the registration and founding.
@@ -44,7 +44,7 @@ Spring Cloud Demo Application Readme
   - h)	Integration test: integration-test folder
     - i.	Start: go to integration-test folder, run “mvn test” after all services are running.
 
-3.	More Spring Cloud Technical Details
+## 3.	More Spring Cloud Technical Details
   - a)	Load Balancing: Spring Cloud LoadBalancer
     - i.	Introduced in order-service pom.xml
     - ii.	The annotation is in AppConfig.java
@@ -60,7 +60,7 @@ Spring Cloud Demo Application Readme
 
   - d)	Database Integration: H2 in-memory database
 
-4.	Service Endpoints 
+## 4.	Service Endpoints 
   - a)	Product-service:
     - i.	Get all products: GET http://localhost:8082/api/product
       - 1.	Success response is 200 with a list of all products
@@ -166,7 +166,7 @@ Spring Cloud Demo Application Readme
         - 1.	Success response is 200 with a list of orders
 
 
-5.	Tests
+## 5.	Tests
   - a)	Unit tests are created for services and controllers
   - b)	Integration test is in integration-test project
   - c)	Spring Cloud Contract tests are created in product-service, and stub run in order-service.
@@ -183,7 +183,7 @@ Spring Cloud Demo Application Readme
     - viii.	com.example.userservice.controller.UserControllerTest.txt: User-service controller unit tests
     - ix.	com.example.userservice.service.UserServiceTest.txt: User-service service unit tests
 
-6.	Optional: React client app
+## 6.	Optional: React client app
   - a)	In folder demo-app
   - b)	Launch: 
     - i.	Go into demo-app folder
@@ -205,7 +205,7 @@ Spring Cloud Demo Application Readme
         - 4.	Create an order with negative quantity will fail
         - 5.	Cancel an order the product inventory will be changed
 
-7.	Tips:
+## 7.	Tips:
   - a)	Tomcat v10 may have issues on mac silicon chip desktop. Rest service always returns 404. Spring boot 3.x is based on tomcat v10. So Spring boot 2.7.15 is used.
   - b)	Java version higher than 11 does not work with Spring Cloud Contract 3.1.5. Spring Cloud Contract 3.1.5 is compatible with Spring Boot 2.7.15 and Spring Cloud 2021.0.5. 
   - c)	Ribbon seems not working with Spring Boot 2.7.15 and Spring Cloud 2021.0.5, use Spring Cloud LoadBalancer instead.
