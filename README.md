@@ -1,11 +1,11 @@
 Spring Cloud Demo Application Readme
 
 1.	Declaration:
-  a)	Java version 11 jdk is installed
-  b)	Maven is installed
-  c)	Spring Boot version: 2.7.15
-  d)	Spring Cloud version: 2021.0.5
-  e)	Zipkin: 2.23.0
+  - a)	Java version 11 jdk is installed
+  - b)	Maven is installed
+  - c)	Spring Boot version: 2.7.15
+  - d)	Spring Cloud version: 2021.0.5
+  - e)	Zipkin: 2.23.0
 
 2.	Application description:
   a)	Spring Cloud Eureka: Eureka folder
