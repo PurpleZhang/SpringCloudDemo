@@ -1,0 +1,13 @@
+org.springframework.cloud.contract.spec.Contract.make {
+    request {
+        method 'DELETE'
+        url('/api/product/3') 
+        headers {
+            contentType(applicationJson())
+        }
+    }
+    response {
+        status NO_CONTENT()
+    }
+}
+

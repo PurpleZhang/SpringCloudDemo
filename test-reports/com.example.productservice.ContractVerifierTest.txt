@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.productservice.ContractVerifierTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.727 s - in com.example.productservice.ContractVerifierTest
